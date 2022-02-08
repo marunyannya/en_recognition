@@ -18,6 +18,15 @@
 Your browser doesn't support Speech Recognition. Sorry.
 	</p>
 </main>
+	
+<style>
+#result{
+	overflow:auto;
+	height:150px;
+	width:100%;
+	border: 1px solid black;
+}
+</style>
 
 <script>
 window.addEventListener("DOMContentLoaded", () => {
@@ -52,6 +61,7 @@ window.addEventListener("DOMContentLoaded", () => {
 				}
 				p.appendChild(text);
 				result.appendChild(p);
+				result.scrollTop = result.scrollHeight;
 			}
 		};
 		
